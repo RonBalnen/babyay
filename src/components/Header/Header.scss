@@ -8,50 +8,36 @@
  */
 
 @import '../variables.scss';
+$bg: url("./bg-d.jpg");
 
 $brand-color: #61dafb;
 
-.root {
-  background: #373277;
-  color: #fff;
-}
+.header {
+  background: $bg no-repeat center;
+  background-size: cover;
+  height: 40rem;
 
+  .header_body {
+    text-align: center;
+    padding-top: 7rem;
+    width: 50rem;
+    margin: 0 auto;
+    position: relative;
+    h1 {
+      font-weight: 500;
+      margin: 0;
+    }
+    input {
+      display: inline-block;
+      width: 90%;
+      height: 5rem;
+      padding: 2rem;
+      box-sizing: border-box;
+      margin-top: 2rem;
+    }
+  }
+}
 .container {
+  width: 128rem;
   margin: 0 auto;
-  padding: 20px 0;
-  max-width: $max-content-width;
-}
-
-.brand {
-  color: color($brand-color lightness(+10%));
-  text-decoration: none;
-  font-size: 1.75em; /* ~28px */
-}
-
-.brandTxt {
-  margin-left: 10px;
-}
-
-.nav {
-  float: right;
-  margin-top: 6px;
-}
-
-.banner {
-  text-align: center;
-}
-
-.bannerTitle {
-  margin: 0;
-  padding: 10px;
-  font-weight: normal;
-  font-size: 4em;
-  line-height: 1em;
-}
-
-.bannerDesc {
-  padding: 0;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.25em;
-  margin: 0;
 }

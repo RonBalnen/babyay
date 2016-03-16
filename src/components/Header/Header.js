@@ -15,19 +15,22 @@ import Navigation from '../Navigation';
 
 function Header() {
   return (
-    <div className={s.root}>
-      <div className={s.container}>
+    <header className={s.header}>
         <Navigation className={s.nav} />
-        <Link className={s.brand} to="/">
-          <img src={require('./logo-small.png')} width="38" height="38" alt="React" />
-          <span className={s.brandTxt}>Your Company</span>
-        </Link>
-        <div className={s.banner}>
-          <h1 className={s.bannerTitle}>React</h1>
-          <p className={s.bannerDesc}>Complex web apps made easy</p>
+        <div className={s.header_body}>
+          <h1>Better baby products with less research</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            A accusantium aliquid dolores eveniet facilis harum non
+            obcaecati possimus vel voluptatum! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit.
+          </p>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+          <input type="search" placeholder="What are you looking for" />
         </div>
-      </div>
-    </div>
+    </header>
+
   );
 }
 

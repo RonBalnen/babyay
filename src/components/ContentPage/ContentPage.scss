@@ -9,13 +9,28 @@
 
 @import '../variables.scss';
 
-.root {
-  padding-left: 20px;
-  padding-right: 20px;
-}
+.main {
+  text-align: center;
+  h2 {
 
+  }
+  .list {
+    margin-top: 3rem;
+    h4 {
+
+    }
+    ul {
+      li {
+        display: inline-block;
+        width: 6rem;
+        height: 6rem;
+        background: #cccccc;
+        margin: 0 1rem;
+      }
+    }
+  }
+}
 .container {
+  width: 128rem;
   margin: 0 auto;
-  padding: 0 0 40px;
-  max-width: $max-content-width;
 }

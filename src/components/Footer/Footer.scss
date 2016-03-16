@@ -9,44 +9,47 @@
 
 @import '../variables.scss';
 
-.root {
-  background: #333;
-  color: #fff;
-}
+.footer {
+  margin-top: 5rem;
+  h2 {
+    display: block;
+    text-align: center;
+  }
+  .items_wrapper {
+    .item {
+      display: inline-block;
+      width: 18rem;
+      height: 22rem;
+      margin: 1rem;
+      background: #ffffff;
+      box-sizing: border-box;
+      box-shadow: 1px 1px 1px rgba(0,0,0,.4);
+      border: 1px solid rgba(0,0,0,.1);
+      padding: 1rem;
+      .img_wrapper {
+        height: 10rem;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        img {
+          position: absolute;
+          display: block;
+          max-height: 100%;
+          max-width: 100%;
+          margin: 0 auto;
+        }
+      }
+      a {
+        color: #333;
+        text-align: left;
+        font-size: 1.4rem;
+        display: block;
+      }
+    }
+  }
 
+}
 .container {
+  width: 128rem;
   margin: 0 auto;
-  padding: 20px 15px;
-  max-width: $max-content-width;
-  text-align: center;
-}
-
-.text {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.textMuted {
-  composes: text;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.spacer {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.text,
-.link {
-  padding: 2px 5px;
-  font-size: 1em;
-}
-
-.link,
-.link:active,
-.link:visited {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
-
-.link:hover {
-  color: rgba(255, 255, 255, 1);
 }

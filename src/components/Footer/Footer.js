@@ -14,17 +14,109 @@ import Link from '../Link';
 
 function Footer() {
   return (
-    <div className={s.root}>
+    <footer className={s.footer}>
       <div className={s.container}>
-        <span className={s.text}>© Your Company</span>
-        <span className={s.spacer}>·</span>
-        <Link className={s.link} to="/">Home</Link>
-        <span className={s.spacer}>·</span>
-        <Link className={s.link} to="/privacy">Privacy</Link>
-        <span className={s.spacer}>·</span>
-        <Link className={s.link} to="/not-found">Not Found</Link>
+        <h2>Trending Items</h2>
+        <div className={s.items_wrapper}>
+          <div className={s.item}>
+            <div className={s.img_wrapper}>
+              <img src={require('./logo.png')} alt="logo" />
+            </div>
+            <a href="#">Lorem ipsum dolor sit amet.</a>
+            <div className={s.rating}>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span>(2134)</span>
+            </div>
+          </div>
+          <div className={s.item}>
+            <div className={s.img_wrapper}>
+              <img src={require('./logo.png')} alt="logo" />
+            </div>
+            <a href="#">Lorem ipsum dolor sit amet.</a>
+            <div className={s.rating}>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span>(2134)</span>
+            </div>
+          </div>
+          <div className={s.item}>
+            <div className={s.img_wrapper}>
+              <img src={require('./logo.png')} alt="logo" />
+            </div>
+            <a href="#">Lorem ipsum dolor sit amet.</a>
+            <div className={s.rating}>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span>(2134)</span>
+            </div>
+          </div>
+          <div className={s.item}>
+            <div className={s.img_wrapper}>
+              <img src={require('./logo.png')} alt="logo" />
+            </div>
+            <a href="#">Lorem ipsum dolor sit amet.</a>
+            <div className={s.rating}>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span>(2134)</span>
+            </div>
+          </div>
+          <div className={s.item}>
+            <div className={s.img_wrapper}>
+              <img src={require('./logo.png')} alt="logo" />
+            </div>
+            <a href="#">Lorem ipsum dolor sit amet.</a>
+            <div className={s.rating}>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span>(2134)</span>
+            </div>
+          </div>
+          <div className={s.item}>
+            <div className={s.img_wrapper}>
+              <img src={require('./logo.png')} alt="logo" />
+            </div>
+            <a href="#">Lorem ipsum dolor sit amet.</a>
+            <div className={s.rating}>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span>(2134)</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

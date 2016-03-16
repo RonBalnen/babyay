@@ -15,14 +15,36 @@ import Link from '../Link';
 
 function Navigation({ className }) {
   return (
-    <div className={cx(s.root, className)} role="navigation">
-      <Link className={s.link} to="/about">About</Link>
-      <Link className={s.link} to="/contact">Contact</Link>
-      <span className={s.spacer}> | </span>
-      <Link className={s.link} to="/login">Log in</Link>
-      <span className={s.spacer}>or</span>
-      <Link className={cx(s.link, s.highlight)} to="/register">Sign up</Link>
-    </div>
+    <nav className={cx(s.root, className)} role="navigation">
+      <div className={s.container}>
+        <Link className={s.logo} to="/">
+          <img src={require('./logo.png')} width="38" height="38" alt="React" />
+        </Link>
+        <ul>
+          <li>
+            <Link className={s.link} to="/about">About</Link>
+          </li>
+          <li>
+            <Link className={s.link} to="/about">About</Link>
+          </li>
+          <li>
+            <Link className={s.link} to="/about">About</Link>
+          </li>
+          <li>
+            <Link className={s.link} to="/about">About</Link>
+          </li>
+          <li>
+            <Link className={s.link} to="/about">About</Link>
+          </li>
+          <li>
+            <Link className={s.link} to="/about">About</Link>
+          </li>
+          <li>
+            <Link className={s.link} to="/about">About</Link>
+          </li>
+        </ul>
+        </div>
+    </nav>
   );
 }
 
